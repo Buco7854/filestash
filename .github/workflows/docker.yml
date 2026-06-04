@@ -26,7 +26,7 @@ jobs:
       - id: image
         env:
           OWNER: ${{ github.repository_owner }}
-        run: echo "name=ghcr.io/${OWNER,,}/filestash" >> "$GITHUB_OUTPUT"
+        run: echo "name=ghcr.io/${OWNER,,}/filestashfork" >> "$GITHUB_OUTPUT"
 
       - id: meta
         uses: docker/metadata-action@v5
